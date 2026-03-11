@@ -16,5 +16,9 @@
     "url": "https://github.com/bdunahu/compromised-action/issues"
   },
   "homepage": "https://github.com/bdunahu/compromised-action#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@actions/core": "^3.0.0",
+    "@actions/github": "^9.0.0"
+  }
 }
