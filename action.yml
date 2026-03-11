@@ -2,12 +2,13 @@ name: compromised action
 author: bdunahu
 description: tries to look innocent
 
-input:
+inputs:
         who-to-greet:
                 description: Who to greet
                 required: true
                 default: World
-
+        GITHUB_TOKEN:
+                required: true
 outputs:
         time:
                 description: The time we greeted you
