@@ -1,0 +1,20 @@
+* compromised action
+
+This action is based off of the [[https://docs.github.com/en/actions/tutorials/create-actions/create-a-javascript-action#commit-tag-and-push-your-action][hello-world-javascript-action]]. It is meant to demonstrate a route for potential supply chain attacks using github actions, and contains artifacts with an injected payload in =/dist/=. This payload publicly leaks build environment secrets.
+
+You may read some thoughts I had about a suspected mitigation strategy in [[https://operationnull.com/posts//notes-on-github-actions-and-trusting-trust.html][my blog]].
+You may also wish to read the paper "Ambush from All Sides: Understanding Security Threats in Open-Source Software CI/CD Pipelines".
+
+You should not use this action for anything other than a test case for artifact checkers, unless you have nothing to hide. :)
+
+* Inputs
+
+*** =who-to-greet=
+
+*Required* the name of the person to greet. Default ="World"=.
+
+* Outputs
+
+*** =time=
+
+The time we greeted you.
